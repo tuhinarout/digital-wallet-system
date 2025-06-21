@@ -1,7 +1,7 @@
 const { Pool } = require('pg');
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL || 'postgresql://neondb_owner:npg_WkYrDjR2Hc0B@ep-dawn-cake-a57lmtyq-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require',
+  connectionString: process.env.DATABASE_URL,
 });
 
 async function initDb() {
