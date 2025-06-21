@@ -9,7 +9,7 @@ const swaggerJsdoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
 
 const app = express();
-const allowedOrigin = 'https://digital-wallet-system-basf.onrender.com';
+const allowedOrigin = 'c';
 
 app.use(cors({
   origin: allowedOrigin,

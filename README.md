@@ -6,7 +6,10 @@
 
 A secure REST API for digital wallet operations including fund transfers, transactions, and product purchases.
 
-![Project Screenshot](/static/digitalwallet.jpeg)
+### Live Demo (Deployed URL)  
+🌐 [https://digital-wallet-system-basf.onrender.com](https://digital-wallet-system-basf.onrender.com)
+
+![Project Screenshot](/static/digitalwalletsystem.png)
 
 ---
 
@@ -48,10 +51,10 @@ Follow these steps to set up the project on your local system:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Bikash-Malu/digitalwallet.git
+   git clone https://github.com/tuhinarout/digital-wallet-system.git
 2. Go to directory
    ```bash
-    cd digitalwallet
+    cd digital-wallet-system
 3. Install dependencies:
    ```bash
    npm install
