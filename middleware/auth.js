@@ -3,6 +3,8 @@ const base64 = require('base-64');
 const { pool } = require('../config/db');
 
 const authenticate = async (req, res, next) => {
+  console.log("check",req.headers);
+  
   const authHeader = req.headers.authorization;
   if (!authHeader || !authHeader.startsWith('Basic ')) {
     return res.status(401).json({ error: 'Unauthorized' });
@@ -13,6 +15,8 @@ const authenticate = async (req, res, next) => {
 
   try {
     const result = await pool.query('SELECT * FROM users WHERE username = $1', [username]);
+    console.log(result);
+    
     const user = result.rows[0];
 
     if (!user || !(await bcrypt.compare(password, user.password))) {

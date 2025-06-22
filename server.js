@@ -13,7 +13,7 @@ const allowedOrigin = 'https://digital-wallet-system-basf.onrender.com';
 
 app.use(cors({
   origin: allowedOrigin,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
 }));
 
 app.use(express.json());
